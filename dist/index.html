@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <!-- Title -->
+  <title>Frontend Mentor | Clipboard landing page</title>
+  <!-- Css -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/tailwind.css">
+  <!-- JavaScript -->
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body class="bg-white text-[hsl(var(--clr-neutral-1))] font-bold">
+  <img class="absolute top-0 left-auto right-auto flex sm:hidden" src="./images/bg-header-mobile.png" alt="bg-image">
+  <img class="absolute top-0 left-auto right-auto hidden sm:flex" src="./images/bg-header-desktop.png" alt="bg-image">
+
+  <header>
+    <div class="grid-container my-16">
+      <div class="flex flex-col items-center text-center gap-14 my-4">
+        <div class="my-8">
+          <img src="./images/logo.svg" alt="logo">
+        </div>
+        <div class="space-y-4">
+          <h1 class="fs-700">A history of everything you copy</h1>
+          <p class="max-w-[45rem] mx-auto">Clipboard allows you to track and organize everything you
+            copy. Instantly access your clipboard on all your devices.</p>
+        </div>
+        <div class="flex flex-col gap-8 w-full sm:max-w-[40rem] sm:flex-row  mx-auto">
+          <button style="--primary-clr: var(--clr-primary-1);--neutral-clr: var(--clr-primary-3);"
+            class="button__main block w-full">Download
+            for
+            iOS</button>
+          <button style="--primary-clr: var(--clr-primary-2);--neutral-clr: var(--clr-primary-4);"
+            class="button__main block w-full">Download for
+            Mac</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid-container mt-32 ">
+      <div class="space-y-4">
+        <h2 class="fs-600">Keep track of your snippets</h2>
+        <p class="max-w-[45rem] mx-auto">Clipboard instantly stores any item you copy in the cloud,
+          meaning you can access your snippets immediately on all your
+          devices. Our Mac and iOS apps will help you organize everything.</p>
+      </div>
+    </div>
+
+    <div class="grid-container grid-container__computer my-16">
+      <div>
+        <img src="./images/image-computer.png" alt="computer">
+      </div>
+      <div class="my-16 space-y-16 lg:text-left lg:ml-28">
+        <div class="space-y-4 max-w-[25rem]">
+          <h2 class="fs-500">Quick Search</h2>
+          <p class="max-w-[45rem] mx-auto">Easily search your snippets by content, category, web address, application,
+            and more.</p>
+        </div>
+        <div class="space-y-4 max-w-[25rem]">
+          <h2 class="fs-500">iCloud Sync</h2>
+          <p class="max-w-[45rem] mx-auto">Instantly saves and syncs snippets across all your devices.</p>
+        </div>
+        <div class="space-y-4 max-w-[25rem]">
+          <h2 class="fs-500">Complete History</h2>
+          <p class="max-w-[45rem] mx-auto">Retrieve any snippets from the first moment you started using the app.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-container mt-32">
+      <div class="space-y-32">
+        <div class="space-y-4">
+          <h2 class="fs-600">Access Clipboard anywhere</h2>
+          <p class="max-w-[45rem] mx-auto" class="max-w-[45rem] mx-auto">Whether you’re on the go, or at your computer,
+            you can access all your
+            Clipboard
+            snippets in a few simple clicks.</p>
+        </div>
+        <div class="">
+          <img class="mx-auto" src="./images/image-devices.png" alt="devices">
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-container mt-32">
+      <div class="space-y-4">
+        <h2 class="fs-600">Supercharge your workflow</h2>
+        <p class="max-w-[45rem] mx-auto">We’ve got the tools to boost your productivity.</p>
+      </div>
+    </div>
+
+    <div class="grid-container mt-16">
+      <div class="flex flex-col items-center lg:items-start gap-16 lg:flex-row">
+        <div class="flex flex-col items-center gap-4 lg:flex-1">
+          <img class="mb-4" src="./images/icon-blacklist.svg" alt="icon">
+          <h2 class="fs-500">Create blacklists</h2>
+          <p class="max-w-[45rem] mx-auto">Ensure sensitive information never makes its way to your clipboard by
+            excluding certain sources.</p>
+        </div>
+        <div class="flex flex-col items-center gap-4 lg:flex-1">
+          <img class="mb-4" src="./images/icon-text.svg" alt="icon">
+          <h2 class="fs-500">Plain text snippets</h2>
+          <p class="max-w-[45rem] mx-auto">Remove unwanted formatting from copied text for a consistent look.</p>
+        </div>
+        <div class="flex flex-col items-center gap-4 lg:flex-1">
+          <img class="mb-4" src="./images/icon-preview.svg" alt="icon">
+          <h2 class="fs-500">Sneak preview</h2>
+          <p class="max-w-[45rem] mx-auto">Quick preview of all snippets on your Clipboard for easy access.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-container mt-32">
+      <div style="grid-template-columns: repeat(auto-fit, minmax(min(11rem, 100%), 1fr));" class="grid gap-16">
+        <div>
+          <img class="mx-auto" src="./images/logo-google.png" alt="company-logo">
+        </div>
+        <div>
+          <img class="mx-auto" src="./images/logo-ibm.png" alt="company-logo">
+        </div>
+        <div>
+          <img class="mx-auto" src="./images/logo-microsoft.png" alt="company-logo">
+        </div>
+        <div>
+          <img class="mx-auto" src="./images/logo-hp.png" alt="company-logo">
+        </div>
+        <div>
+          <img class="mx-auto" src="./images/logo-vector-graphics.png" alt="company-logo">
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-container my-32">
+      <div class="space-y-8">
+        <div class="space-y-4">
+          <h2 class="fs-700">Clipboard for iOS and Mac OS</h2>
+          <p class="max-w-[45rem] mx-auto">Available for free on the App Store. Download for Mac or iOS, sync with
+            iCloud
+            and you’re ready to start adding to your clipboard.</p>
+        </div>
+        <div class="flex flex-col gap-8 w-full sm:max-w-[40rem] sm:flex-row mx-auto">
+          <button style="--primary-clr: var(--clr-primary-1);--neutral-clr: var(--clr-primary-3);"
+            class="button__main block w-full">Download
+            for
+            iOS</button>
+          <button style="--primary-clr: var(--clr-primary-2);--neutral-clr: var(--clr-primary-4);"
+            class="button__main block w-full">Download for
+            Mac</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer style="background-color: hsl(var(--clr-neutral-1), .1);" class="w-full">
+    <div class="grid-container py-8">
+      <div class="flex flex-col gap-4 items-center justify-between lg:flex-row w-full">
+        <div class="flex flex-col items-center lg:flex-row">
+          <div>
+            <img class="size-[50px]" src="./images/logo.svg" alt="logo">
+          </div>
+          <div class="flex flex-col content-center gap-x-24 gap-y-4 my-8 lg:text-left lg:flex-row lg:ml-32">
+            <div class="space-y-4">
+              <a class="block hover:text-[hsl(var(--clr-primary-1))] focus:text-[hsl(var(--clr-primary-1))]"
+                href="#">FAQs</a>
+              <a class="block hover:text-[hsl(var(--clr-primary-1))] focus:text-[hsl(var(--clr-primary-1))]"
+                href="#">Contact Us</a>
+            </div>
+            <div class="space-y-4">
+              <a class="block hover:text-[hsl(var(--clr-primary-1))] focus:text-[hsl(var(--clr-primary-1))]"
+                href="#">Privacy Policy</a>
+              <a class="block hover:text-[hsl(var(--clr-primary-1))] focus:text-[hsl(var(--clr-primary-1))]"
+                href="#">Press Kit</a>
+            </div>
+            <div class="space-y-4">
+              <a class="block hover:text-[hsl(var(--clr-primary-1))] focus:text-[hsl(var(--clr-primary-1))]"
+                href="#">Install Guide</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-10">
+          <a class="icon" href="#"><img src="./images/icon-facebook.svg" alt="social-media-logo"></a>
+          <a class="icon" href="#"><img src="./images/icon-twitter.svg" alt="social-media-logo"></a>
+          <a class="icon" href="#"><img src="./images/icon-instagram.svg" alt="social-media-logo"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
